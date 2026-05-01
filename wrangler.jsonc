@@ -10,10 +10,9 @@
   },
   "compatibility_flags": [
     "nodejs_compat"
+  ],
+  "routes": [
+    { "pattern": "theyaegerpractice.com", "custom_domain": true },
+    { "pattern": "www.theyaegerpractice.com", "custom_domain": true }
   ]
-  // Custom domain routes — uncomment after theyaegerpractice.com shows Active in Cloudflare DNS:
-  // "routes": [
-  //   { "pattern": "theyaegerpractice.com", "custom_domain": true },
-  //   { "pattern": "www.theyaegerpractice.com", "custom_domain": true }
-  // ]
 }
