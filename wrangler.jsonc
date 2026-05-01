@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "theyaegerpractice",
+  "compatibility_date": "2026-05-01",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "."
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+  // Custom domain routes — uncomment after theyaegerpractice.com shows Active in Cloudflare DNS:
+  // "routes": [
+  //   { "pattern": "theyaegerpractice.com", "custom_domain": true },
+  //   { "pattern": "www.theyaegerpractice.com", "custom_domain": true }
+  // ]
+}
