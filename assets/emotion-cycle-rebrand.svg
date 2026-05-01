@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 920" role="img" aria-labelledby="cycle-title cycle-desc" preserveAspectRatio="xMidYMid meet">
+  <title id="cycle-title">How to process emotions healthfully</title>
+  <desc id="cycle-desc">A seven-step cycle for emotional wellness: Feel, Acknowledge, Identify, Emote, Assess, Articulate, Adapt, grouped into awareness and intentional processing halves.</desc>
+
+  <defs>
+    <!-- Ring halves: lighter sand (awareness) and warmer tan (intentional) -->
+    <linearGradient id="node-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b77a40"/>
+      <stop offset="100%" stop-color="#935d2a"/>
+    </linearGradient>
+    <radialGradient id="center-fill" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b77a40"/>
+      <stop offset="100%" stop-color="#7a4a1e"/>
+    </radialGradient>
+
+    <style>
+      .display { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; fill: #0f0e0c; font-weight: 400; }
+      .sub { font-family: 'Satoshi', 'Inter', system-ui, sans-serif; fill: #5a544c; font-weight: 500; }
+      .node-label { font-family: 'Satoshi', 'Inter', system-ui, sans-serif; fill: #ffffff; font-weight: 600; font-size: 19px; }
+      .band-label { font-family: 'Satoshi', 'Inter', system-ui, sans-serif; fill: #0f0e0c; font-weight: 700; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+      .center-display { font-family: 'Instrument Serif', Georgia, serif; fill: #ffffff; font-weight: 400; }
+      .footnote { font-family: 'Satoshi', 'Inter', system-ui, sans-serif; fill: #5a544c; font-weight: 400; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1000" height="920" fill="#f5f3ee"/>
+
+  <!-- ===== Header ===== -->
+  <text x="500" y="78" text-anchor="middle" class="display" font-size="48">How to process emotions healthfully</text>
+  <line x1="440" y1="100" x2="560" y2="100" stroke="#935d2a" stroke-width="1.5"/>
+  <text x="500" y="130" text-anchor="middle" class="sub" font-size="16">A seven-step cycle for emotional wellness</text>
+
+  <!-- ===== Outer orbit (soft dashed) ===== -->
+  <!-- Cycle center: (500, 520), outer orbit radius 260 -->
+  <circle cx="500" cy="520" r="260" fill="none" stroke="#cfc6b2" stroke-width="1.2" stroke-dasharray="3 6"/>
+
+  <!-- ===== Inner rings: two halves showing awareness vs intentional ===== -->
+  <!-- Awareness half (right): lighter sand arc -->
+  <path d="M 500 390 A 130 130 0 0 1 500 650" fill="none" stroke="#d8a775" stroke-width="28" stroke-linecap="butt"/>
+  <!-- Intentional half (left): warmer tan arc -->
+  <path d="M 500 650 A 130 130 0 0 1 500 390" fill="none" stroke="#8a6a46" stroke-width="28" stroke-linecap="butt"/>
+
+  <!-- Band labels on rings (centered on the arcs at radius 130) -->
+  <text x="630" y="517" class="band-label" text-anchor="middle" fill="#5a3a12">Awareness</text>
+  <text x="630" y="535" class="band-label" text-anchor="middle" fill="#5a3a12">Processing</text>
+
+  <text x="370" y="517" class="band-label" text-anchor="middle" fill="#5a3a12">Intentional</text>
+  <text x="370" y="535" class="band-label" text-anchor="middle" fill="#5a3a12">Processing</text>
+
+  <!-- ===== Center hub ===== -->
+  <circle cx="500" cy="520" r="76" fill="url(#center-fill)"/>
+  <text x="500" y="508" text-anchor="middle" class="center-display" font-size="22">Emotion</text>
+  <text x="500" y="534" text-anchor="middle" class="center-display" font-size="22">Processing</text>
+  <text x="500" y="560" text-anchor="middle" class="center-display" font-size="22">Cycle</text>
+
+  <!-- =====
+    Seven nodes evenly placed around orbit (radius 260).
+    Angles in degrees, measured clockwise from top (12 o'clock = 0°):
+      0:   Feel           (top)
+      51.4: Acknowledge   (upper right)
+      102.8: Identify     (lower right)
+      154.3: Emote        (bottom right)
+      205.7: Assess       (bottom left)
+      257.1: Articulate   (lower left)
+      308.6: Adapt        (upper left)
+    Center (500, 520). x = 500 + 260*sin(a), y = 520 - 260*cos(a).
+  ===== -->
+
+  <!-- Node radius 62 -->
+
+  <!-- Feel (top) -->
+  <circle cx="500" cy="260" r="62" fill="url(#node-fill)" stroke="#6b3d14" stroke-width="1"/>
+  <text x="500" y="266" text-anchor="middle" class="node-label">Feel</text>
+
+  <!-- Acknowledge (upper right) -->
+  <circle cx="703" cy="357" r="62" fill="url(#node-fill)" stroke="#6b3d14" stroke-width="1"/>
+  <text x="703" y="363" text-anchor="middle" class="node-label">Acknowledge</text>
+
+  <!-- Identify (lower right) -->
+  <circle cx="753" cy="578" r="62" fill="url(#node-fill)" stroke="#6b3d14" stroke-width="1"/>
+  <text x="753" y="584" text-anchor="middle" class="node-label">Identify</text>
+
+  <!-- Emote (bottom right) -->
+  <circle cx="617" cy="754" r="62" fill="url(#node-fill)" stroke="#6b3d14" stroke-width="1"/>
+  <text x="617" y="760" text-anchor="middle" class="node-label">Emote</text>
+
+  <!-- Assess (bottom left) -->
+  <circle cx="383" cy="754" r="62" fill="url(#node-fill)" stroke="#6b3d14" stroke-width="1"/>
+  <text x="383" y="760" text-anchor="middle" class="node-label">Assess</text>
+
+  <!-- Articulate (lower left) -->
+  <circle cx="247" cy="578" r="62" fill="url(#node-fill)" stroke="#6b3d14" stroke-width="1"/>
+  <text x="247" y="584" text-anchor="middle" class="node-label">Articulate</text>
+
+  <!-- Adapt (upper left) -->
+  <circle cx="297" cy="357" r="62" fill="url(#node-fill)" stroke="#6b3d14" stroke-width="1"/>
+  <text x="297" y="363" text-anchor="middle" class="node-label">Adapt</text>
+
+  <!-- ===== Footer note ===== -->
+  <text x="500" y="880" text-anchor="middle" class="footnote" font-size="13" font-style="italic">Healing is not linear. Any step can be revisited.</text>
+  <text x="500" y="900" text-anchor="middle" class="footnote" font-size="11">© The Yaeger Practice 2026</text>
+</svg>

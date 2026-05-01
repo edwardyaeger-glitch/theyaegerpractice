@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1240" role="img" aria-labelledby="burnout-title burnout-desc" preserveAspectRatio="xMidYMid meet">
+  <title id="burnout-title">How burnout starts showing up</title>
+  <desc id="burnout-desc">A four-zone pattern map showing cognitive, physical, emotional, and behavioral signs of burnout across increasing intensity.</desc>
+
+  <defs>
+    <!-- Intensity gradient: ivory → light orange → deeper burnt orange -->
+    <linearGradient id="intensity" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#efe8db"/>
+      <stop offset="50%" stop-color="#d9a979"/>
+      <stop offset="100%" stop-color="#935d2a"/>
+    </linearGradient>
+
+    <!-- Subtle tints for the four zones, increasing in warmth -->
+    <linearGradient id="zone1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ede6d6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f5f3ee" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="zone2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8cfa9" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f5f3ee" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="zone3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8a775" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f5f3ee" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="zone4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b77a40" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f5f3ee" stop-opacity="0"/>
+    </linearGradient>
+
+    <style>
+      .display { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-weight: 400; fill: #0f0e0c; }
+      .serif-body { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-weight: 400; fill: #0f0e0c; }
+      .sans { font-family: 'Satoshi', 'Inter', system-ui, -apple-system, sans-serif; fill: #0f0e0c; }
+      .mute { fill: #5a544c; }
+      .eyebrow { font-family: 'Satoshi', 'Inter', system-ui, sans-serif; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; fill: #935d2a; }
+      .zone-title { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; fill: #0f0e0c; }
+      .bullet { fill: #935d2a; }
+      .divider { stroke: #e5dfd1; stroke-width: 1; }
+      .pill { fill: #ffffff; stroke: #e5dfd1; stroke-width: 1; }
+      .pill-text { font-family: 'Satoshi', 'Inter', system-ui, sans-serif; font-size: 14px; fill: #0f0e0c; }
+    </style>
+  </defs>
+
+  <!-- Background card -->
+  <rect x="0" y="0" width="900" height="1240" fill="#f5f3ee"/>
+  <rect x="18" y="18" width="864" height="1204" rx="14" ry="14" fill="#faf7f0" stroke="#e5dfd1" stroke-width="1"/>
+
+  <!-- ===== HEADER ===== -->
+  <text x="56" y="100" class="display" font-size="58" style="line-height:1">How burnout</text>
+  <text x="56" y="160" class="display" font-size="58">starts</text>
+  <text x="56" y="220" class="display" font-size="58">showing up</text>
+
+  <text x="56" y="268" class="sans mute" font-size="16" style="font-weight:400;">
+    <tspan x="56" dy="0">Burnout often appears as a pattern across</tspan>
+    <tspan x="56" dy="22">attention, the body, mood, and daily habits before</tspan>
+    <tspan x="56" dy="22">it becomes unmistakable.</tspan>
+  </text>
+
+  <!-- Intensity map card (top right) -->
+  <rect x="495" y="80" width="360" height="130" rx="10" ry="10" fill="#ffffff" stroke="#e5dfd1"/>
+  <text x="515" y="112" class="eyebrow" font-size="12">Intensity Map</text>
+  <rect x="515" y="128" width="320" height="12" rx="6" ry="6" fill="url(#intensity)"/>
+  <text x="515" y="170" class="sans" font-size="13" fill="#5a544c">Early drift</text>
+  <text x="675" y="170" class="sans" font-size="13" fill="#5a544c" text-anchor="middle">Building strain</text>
+  <text x="835" y="170" class="sans" font-size="13" fill="#5a544c" text-anchor="end">Spillover</text>
+
+  <!-- ===== FOUR ZONES ===== -->
+  <!-- Column geometry: 4 cols from x=40 to x=860 -->
+  <!-- col widths ~205, padding 16 -->
+  <!-- Top band (intensity tint) -->
+  <rect x="40"  y="330" width="205" height="18" fill="#efe8db"/>
+  <rect x="245" y="330" width="205" height="18" fill="#e8cfa9"/>
+  <rect x="450" y="330" width="205" height="18" fill="#d8a775"/>
+  <rect x="655" y="330" width="205" height="18" fill="#b77a40"/>
+
+  <!-- Vertical dividers -->
+  <line x1="245" y1="348" x2="245" y2="940" class="divider"/>
+  <line x1="450" y1="348" x2="450" y2="940" class="divider"/>
+  <line x1="655" y1="348" x2="655" y2="940" class="divider"/>
+
+  <!-- Zone backgrounds (subtle tint fade) -->
+  <rect x="40"  y="348" width="205" height="260" fill="url(#zone1)"/>
+  <rect x="245" y="348" width="205" height="260" fill="url(#zone2)"/>
+  <rect x="450" y="348" width="205" height="260" fill="url(#zone3)"/>
+  <rect x="655" y="348" width="205" height="260" fill="url(#zone4)"/>
+
+  <!-- Zone 1: Cognitive -->
+  <text x="56" y="382" class="eyebrow" font-size="12">Cognitive</text>
+  <text x="56" y="420" class="zone-title" font-size="34">Mental</text>
+  <text x="56" y="454" class="zone-title" font-size="34">drift</text>
+  <text x="56" y="494" class="sans mute" font-size="14">
+    <tspan x="56" dy="0">The first signs often</tspan>
+    <tspan x="56" dy="20">show up as simple</tspan>
+    <tspan x="56" dy="20">task and time</tspan>
+    <tspan x="56" dy="20">management</tspan>
+    <tspan x="56" dy="20">mistakes.</tspan>
+  </text>
+
+  <!-- Zone 1 bullets -->
+  <g>
+    <circle cx="62" cy="650" r="4" class="bullet"/>
+    <text x="74" y="654" class="sans" font-size="13">
+      <tspan x="74" dy="0">Forgetfulness or</tspan>
+      <tspan x="74" dy="18">losing track of</tspan>
+      <tspan x="74" dy="18">thoughts</tspan>
+    </text>
+    <circle cx="62" cy="722" r="4" class="bullet"/>
+    <text x="74" y="726" class="sans" font-size="13">
+      <tspan x="74" dy="0">Difficulty focusing,</tspan>
+      <tspan x="74" dy="18">daydreaming, or</tspan>
+      <tspan x="74" dy="18">zoning out</tspan>
+    </text>
+    <circle cx="62" cy="794" r="4" class="bullet"/>
+    <text x="74" y="798" class="sans" font-size="13">
+      <tspan x="74" dy="0">Simple task mistakes</tspan>
+      <tspan x="74" dy="18">or oversights</tspan>
+    </text>
+    <circle cx="62" cy="848" r="4" class="bullet"/>
+    <text x="74" y="852" class="sans" font-size="13">
+      <tspan x="74" dy="0">Issues with time</tspan>
+      <tspan x="74" dy="18">management</tspan>
+    </text>
+  </g>
+
+  <!-- Zone 2: Physical -->
+  <text x="261" y="382" class="eyebrow" font-size="12">Physical</text>
+  <text x="261" y="420" class="zone-title" font-size="34">Body</text>
+  <text x="261" y="454" class="zone-title" font-size="34">strain</text>
+  <text x="261" y="494" class="sans mute" font-size="14">
+    <tspan x="261" dy="0">As pressure builds,</tspan>
+    <tspan x="261" dy="20">stress starts</tspan>
+    <tspan x="261" dy="20">registering physically</tspan>
+    <tspan x="261" dy="20">as pain, fatigue, and</tspan>
+    <tspan x="261" dy="20">illness-like</tspan>
+    <tspan x="261" dy="20">symptoms.</tspan>
+  </text>
+
+  <g>
+    <circle cx="267" cy="670" r="4" class="bullet"/>
+    <text x="279" y="674" class="sans" font-size="13">
+      <tspan x="279" dy="0">Neck, back, or</tspan>
+      <tspan x="279" dy="18">shoulder pain</tspan>
+    </text>
+    <circle cx="267" cy="724" r="4" class="bullet"/>
+    <text x="279" y="728" class="sans" font-size="13">
+      <tspan x="279" dy="0">Stomach issues,</tspan>
+      <tspan x="279" dy="18">headaches, or cold-</tspan>
+      <tspan x="279" dy="18">like symptoms</tspan>
+    </text>
+    <circle cx="267" cy="796" r="4" class="bullet"/>
+    <text x="279" y="800" class="sans" font-size="13">
+      <tspan x="279" dy="0">Dry eyes, mouth,</tspan>
+      <tspan x="279" dy="18">throat, skin</tspan>
+    </text>
+    <circle cx="267" cy="850" r="4" class="bullet"/>
+    <text x="279" y="854" class="sans" font-size="13">
+      <tspan x="279" dy="0">Fatigue or exhaustion</tspan>
+    </text>
+  </g>
+
+  <!-- Zone 3: Emotional -->
+  <text x="466" y="382" class="eyebrow" font-size="12">Emotional</text>
+  <text x="466" y="420" class="zone-title" font-size="34">Mood</text>
+  <text x="466" y="454" class="zone-title" font-size="34">pressure</text>
+  <text x="466" y="494" class="sans mute" font-size="14">
+    <tspan x="466" dy="0">Emotional resilience</tspan>
+    <tspan x="466" dy="20">gets thinner and</tspan>
+    <tspan x="466" dy="20">stress becomes</tspan>
+    <tspan x="466" dy="20">easier to feel</tspan>
+    <tspan x="466" dy="20">and harder to</tspan>
+    <tspan x="466" dy="20">recover from.</tspan>
+  </text>
+
+  <g>
+    <circle cx="472" cy="670" r="4" class="bullet"/>
+    <text x="484" y="674" class="sans" font-size="13">
+      <tspan x="484" dy="0">Irritability, frustration,</tspan>
+      <tspan x="484" dy="18">or moodiness</tspan>
+    </text>
+    <circle cx="472" cy="724" r="4" class="bullet"/>
+    <text x="484" y="728" class="sans" font-size="13">
+      <tspan x="484" dy="0">Resentment towards</tspan>
+      <tspan x="484" dy="18">work responsibilities</tspan>
+      <tspan x="484" dy="18">and life demands</tspan>
+    </text>
+    <circle cx="472" cy="796" r="4" class="bullet"/>
+    <text x="484" y="800" class="sans" font-size="13">
+      <tspan x="484" dy="0">Depressiveness or</tspan>
+      <tspan x="484" dy="18">anxiousness</tspan>
+    </text>
+    <circle cx="472" cy="850" r="4" class="bullet"/>
+    <text x="484" y="854" class="sans" font-size="13">
+      <tspan x="484" dy="0">&#8220;Mini&#8221; crashouts or</tspan>
+      <tspan x="484" dy="18">breakdowns</tspan>
+    </text>
+  </g>
+
+  <!-- Zone 4: Behavioral -->
+  <text x="671" y="382" class="eyebrow" font-size="12">Behavioral</text>
+  <text x="671" y="420" class="zone-title" font-size="34">Spillover</text>
+  <text x="671" y="478" class="sans mute" font-size="14">
+    <tspan x="671" dy="0">Stress begins</tspan>
+    <tspan x="671" dy="20">affecting sleep,</tspan>
+    <tspan x="671" dy="20">routines, coping</tspan>
+    <tspan x="671" dy="20">behaviors, and life</tspan>
+    <tspan x="671" dy="20">outside of work.</tspan>
+  </text>
+
+  <g>
+    <circle cx="677" cy="650" r="4" class="bullet"/>
+    <text x="689" y="654" class="sans" font-size="13">
+      <tspan x="689" dy="0">Staying up late for no</tspan>
+      <tspan x="689" dy="18">reason or dreading</tspan>
+      <tspan x="689" dy="18">starting the morning</tspan>
+    </text>
+    <circle cx="677" cy="722" r="4" class="bullet"/>
+    <text x="689" y="726" class="sans" font-size="13">
+      <tspan x="689" dy="0">Avoiding the gym or</tspan>
+      <tspan x="689" dy="18">other commitments</tspan>
+    </text>
+    <circle cx="677" cy="776" r="4" class="bullet"/>
+    <text x="689" y="780" class="sans" font-size="13">
+      <tspan x="689" dy="0">Increase in alcohol</tspan>
+      <tspan x="689" dy="18">consumption or</tspan>
+      <tspan x="689" dy="18">substance misuse</tspan>
+    </text>
+    <circle cx="677" cy="848" r="4" class="bullet"/>
+    <text x="689" y="852" class="sans" font-size="13">
+      <tspan x="689" dy="0">Isolating,</tspan>
+      <tspan x="689" dy="18">overeating, loss of</tspan>
+      <tspan x="689" dy="18">appetite, loss of</tspan>
+      <tspan x="689" dy="18">pleasures and joys</tspan>
+    </text>
+  </g>
+
+  <!-- ===== READING THE PATTERN ===== -->
+  <line x1="40" y1="960" x2="860" y2="960" class="divider"/>
+
+  <text x="56" y="1000" class="eyebrow" font-size="12">Reading the pattern</text>
+  <text x="56" y="1036" class="display" font-size="26">Burnout rarely starts in one place. It usually</text>
+  <text x="56" y="1066" class="display" font-size="26">spreads. And intensifies.</text>
+
+  <!-- Pills row -->
+  <g>
+    <rect x="56"  y="1094" width="252" height="60" rx="8" class="pill"/>
+    <text x="68"  y="1117" class="pill-text">Early drift becomes harder to</text>
+    <text x="68"  y="1135" class="pill-text">dismiss when it repeats.</text>
+
+    <rect x="324" y="1094" width="252" height="60" rx="8" class="pill"/>
+    <text x="336" y="1117" class="pill-text">The body often registers stress</text>
+    <text x="336" y="1135" class="pill-text">before people name it as burnout.</text>
+
+    <rect x="592" y="1094" width="252" height="60" rx="8" class="pill"/>
+    <text x="604" y="1117" class="pill-text">When patterns cross several zones,</text>
+    <text x="604" y="1135" class="pill-text">it is usually time to pause.</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="450" y="1186" text-anchor="middle" class="sans mute" font-size="12" font-style="italic">
+    Educational material. Not a clinical diagnosis. Persistent or worsening symptoms deserve professional support.
+  </text>
+  <text x="450" y="1208" text-anchor="middle" class="sans mute" font-size="11">© The Yaeger Practice 2026</text>
+</svg>
