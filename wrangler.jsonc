@@ -10,9 +10,8 @@
   },
   "compatibility_flags": [
     "nodejs_compat"
-  ],
-  "routes": [
-    { "pattern": "theyaegerpractice.com", "custom_domain": true },
-    { "pattern": "www.theyaegerpractice.com", "custom_domain": true }
   ]
+  // Custom domains (theyaegerpractice.com and www.theyaegerpractice.com) are attached
+  // via the Cloudflare dashboard UI, not via wrangler routes. Do not add a "routes"
+  // block here unless you also detach the domains in the dashboard first.
 }
