@@ -771,3 +771,28 @@
         margin: 0 auto;
       }
     }
+
+    /* About hero -- override portrait-shaped .hero-visual for the abstract banner */
+    .about-hero-visual {
+      aspect-ratio: auto;
+      max-width: none;
+      margin-left: 0;
+      margin-top: 80px; /* nudge image down on desktop so it sits lower than the eyebrow/h1 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+    }
+    @media (max-width: 960px) {
+      .about-hero-visual {
+        margin-top: 8px;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .about-hero-visual .about-hero-image {
+        width: 100% !important;
+        max-width: 380px !important;
+        transform: none !important;
+      }
+    }
