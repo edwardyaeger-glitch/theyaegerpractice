@@ -32,7 +32,55 @@
     @import url('assets/site.css');
 
     /* ===== CONTACT PAGE ===== */
-    .contact-hero { padding: 80px 0 40px; }
+    .contact-hero { padding: 80px 0 32px; }
+    .contact-hero .container { max-width: 780px; }
+
+    /* Prominent contact lines, displayed directly under H1 */
+    .contact-direct {
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 1px solid var(--color-divider);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .contact-direct .contact-row {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .contact-direct .contact-label {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+    .contact-direct a {
+      font-family: var(--font-serif, 'Instrument Serif', serif);
+      font-size: 2rem;
+      line-height: 1.2;
+      color: var(--color-ink);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(147, 93, 42, 0.35);
+      padding-bottom: 4px;
+      align-self: flex-start;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .contact-direct a:hover {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+    .contact-direct .contact-hours {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--color-text-muted);
+      letter-spacing: 0.02em;
+    }
+    @media (max-width: 720px) {
+      .contact-direct a { font-size: 1.5rem; }
+    }
 
     .contact-body {
       padding: 0 0 40px;
@@ -47,29 +95,6 @@
       max-width: 62ch;
     }
     .contact-prose p:last-child { margin-bottom: 0; }
-
-    .contact-lines {
-      margin-top: 44px;
-      padding-top: 28px;
-      border-top: 1px solid var(--color-divider);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .contact-lines a {
-      font-family: var(--font-body);
-      font-size: 1.08rem;
-      color: var(--color-text);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(147, 93, 42, 0.35);
-      padding-bottom: 3px;
-      align-self: flex-start;
-      transition: color 0.2s ease, border-color 0.2s ease;
-    }
-    .contact-lines a:hover {
-      color: var(--color-primary);
-      border-bottom-color: var(--color-primary);
-    }
 
     .contact-return {
       margin-top: 56px;
@@ -134,26 +159,36 @@
         <div class="hero-copy">
           <span class="eyebrow">Contact</span>
           <h1 id="contact-heading">How to reach the practice.</h1>
+
+          <div class="contact-direct" aria-label="Direct contact">
+            <div class="contact-row">
+              <span class="contact-label">Email</span>
+              <a href="mailto:info@yaegergroup.com?subject=Inquiry">info@yaegergroup.com</a>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+19178816749">917-881-6749</a>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Hours</span>
+              <span class="contact-hours">Monday-Friday, 11am-8pm ET</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- BODY -->
-    <section class="contact-body" aria-label="Contact details">
+    <section class="contact-body" aria-label="About contacting the practice">
       <div class="container">
         <div class="contact-prose">
           <p>The practice is small by design and accepts new clients primarily through referral from a current or former client, a treating clinician, or a trusted colleague. If you were referred, a brief note describing the referring source and, in a sentence or two, what you are looking to address is sufficient.</p>
           <p>Inquiries are read personally. A response typically follows within two business days, and, when appropriate, a short, no-fee video consultation is offered to determine whether the practice is a suitable fit.</p>
         </div>
 
-        <figure class="contact-figure" style="max-width: 640px; margin: 40px auto 48px; padding: 0;">
+        <figure class="contact-figure" style="max-width: 480px; margin: 56px auto 48px; padding: 0;">
           <img src="assets/portrait-candid.jpg" alt="Edward J. Yaeger, Jr." loading="lazy" style="display: block; width: 100%; height: auto; border: 1px solid var(--color-divider);">
         </figure>
-
-        <div class="contact-lines" aria-label="Direct contact">
-          <a href="mailto:info@yaegergroup.com?subject=Inquiry">info@yaegergroup.com</a>
-          <a href="tel:+19178816749">917-881-6749</a>
-        </div>
 
         <p class="contact-return">
           <a href="about.html">About</a>
