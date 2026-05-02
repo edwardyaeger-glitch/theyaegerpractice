@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Abstract geometric composition" preserveAspectRatio="xMidYMid meet">
+  <!-- Top right vertical bar -->
+  <rect x="640" y="40" width="36" height="220" fill="#0f0f0f" transform="rotate(8 658 150)"/>
+
+  <!-- Long diagonal bar through center -->
+  <rect x="170" y="280" width="36" height="340" fill="#0f0f0f" transform="rotate(-28 188 450)"/>
+
+  <!-- Small horizontal bar bottom-left -->
+  <rect x="120" y="490" width="120" height="36" fill="#0f0f0f"/>
+
+  <!-- Small vertical fragment bottom-center -->
+  <rect x="250" y="510" width="36" height="80" fill="#0f0f0f"/>
+
+  <!-- Central terracotta triangle -->
+  <polygon points="420,120 580,510 350,510" fill="#935d2a"/>
+</svg>
