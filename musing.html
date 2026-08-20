@@ -111,17 +111,43 @@
       font-size: 0.96rem;
       margin-bottom: 18px;
     }
-    .subscribe-frame {
+    .subscribe-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
       width: 100%;
-      height: 150px;
-      border: 0;
-      background: transparent;
-      display: block;
+      min-height: 52px;
+      padding: 11px 12px 11px 18px;
+      background: var(--color-surface-2);
+      border: 1px solid var(--color-divider);
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      transition: border-color var(--transition), box-shadow var(--transition);
     }
-    .subscribe-fallback {
-      margin-top: 12px;
-      font-size: 0.82rem;
-      color: var(--color-text-faint);
+    .subscribe-action strong {
+      flex: 0 0 auto;
+      padding: 9px 16px;
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.84rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .subscribe-action:hover {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 6px 18px rgba(147, 93, 42, 0.1);
+    }
+    .subscribe-action:hover strong {
+      background: var(--color-primary-hover);
+    }
+    .subscribe-note {
+      margin-top: 14px;
+      margin-bottom: 0 !important;
+      font-size: 0.82rem !important;
+      color: var(--color-text-faint) !important;
     }
     .latest {
       padding: 76px 0 92px;
@@ -276,6 +302,14 @@
       .subscribe-panel {
         padding: 24px 20px;
       }
+      .subscribe-action {
+        align-items: stretch;
+        flex-direction: column;
+        padding: 14px;
+      }
+      .subscribe-action strong {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -287,7 +321,7 @@
     <div class="nav">
       <div class="nav-top">
         <div class="brand">
-          <a href="index.html" aria-label="The Yaeger Practice home" class="brand-logo-link" style="display:inline-flex; align-items:center;"><img src="assets/logo.png" alt="Yaeger Group"></a>
+          <a href="./index.html" aria-label="The Yaeger Practice home" class="brand-logo-link" style="display:inline-flex; align-items:center;"><img src="./assets/logo.png" alt=""></a>
           <span class="brand-text">
             <a href="index.html" class="brand-practice">The Yaeger Practice</a>
             <a href="https://yaegergroup.com/" class="brand-sublink" target="_blank" rel="noopener">Yaeger Group</a>
@@ -352,14 +386,11 @@
         <aside class="subscribe-panel" id="subscribe" aria-labelledby="subscribe-heading">
           <h2 id="subscribe-heading">Read by email</h2>
           <p>No app is required. New pieces can arrive directly in your inbox.</p>
-          <iframe
-            class="subscribe-frame"
-            src="https://edwardyaeger.substack.com/embed"
-            title="Subscribe to Musings for the Mental"
-            loading="lazy"
-            scrolling="no">
-          </iframe>
-          <p class="subscribe-fallback">If the form does not appear, <a href="https://edwardyaeger.substack.com/subscribe" target="_blank" rel="noopener noreferrer">subscribe directly on Substack</a>.</p>
+          <a class="subscribe-action" href="https://edwardyaeger.substack.com/subscribe" target="_blank" rel="noopener noreferrer">
+            <span>Open the secure signup page</span>
+            <strong>Subscribe <span aria-hidden="true">&rarr;</span></strong>
+          </a>
+          <p class="subscribe-note">Subscription is managed by Substack. You can read by email or on the web; the app remains optional.</p>
         </aside>
       </div>
     </section>
