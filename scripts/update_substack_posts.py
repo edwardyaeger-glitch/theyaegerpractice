@@ -89,7 +89,15 @@ def render_post(item: ET.Element) -> str:
 def fetch_feed() -> bytes:
     request = urllib.request.Request(
         FEED_URL,
-        headers={"User-Agent": "The-Yaeger-Practice-Website/1.0"},
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+            ),
+            "Accept": "application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Cache-Control": "no-cache",
+        },
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         return response.read()
