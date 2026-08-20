@@ -36,6 +36,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.theyaegerpractice.com/musing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.theyaegerpractice.com/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
