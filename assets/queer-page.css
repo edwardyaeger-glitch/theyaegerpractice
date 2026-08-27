@@ -203,7 +203,7 @@
 }
 
 .qe-yaegerisms {
-  padding: 80px 0;
+  padding: 72px 0 56px;
   display: grid;
   grid-template-columns: 0.72fr 1.28fr;
   gap: 72px;
@@ -230,11 +230,11 @@
 }
 
 .qe-about {
-  padding: 112px 0;
+  padding: 64px 0 96px;
   display: grid;
   grid-template-columns: 0.82fr 1.18fr;
-  gap: 72px;
-  align-items: center;
+  gap: 56px;
+  align-items: start;
 }
 
 .qe-about-image {
@@ -250,6 +250,13 @@
 
 .qe-about-copy > p:not(.qe-eyebrow) {
   margin: 22px 0 0;
+}
+
+.qe-about-copy > .qe-about-intro {
+  margin-top: 16px;
+  color: var(--color-text);
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 
 .qe-about-copy p a {
@@ -391,9 +398,12 @@
     padding-left: 58px;
   }
 
-  .qe-yaegerisms,
+  .qe-yaegerisms {
+    padding: 64px 0 48px;
+  }
+
   .qe-about {
-    padding: 76px 0;
+    padding: 56px 0 72px;
   }
 
   .qe-about {
