@@ -309,7 +309,6 @@
     .trans-grid.trans-grid--three { grid-template-columns: repeat(3, 1fr); }
     @media (max-width: 820px) { .trans-grid.trans-grid--three { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 520px) { .trans-grid.trans-grid--three { grid-template-columns: 1fr; } }
-    .trans-grid.trans-grid--seven .trans-card:last-child { grid-column: 1 / -1; }
     .trans-card {
       background: var(--color-surface-2);
       padding: 36px 32px;
