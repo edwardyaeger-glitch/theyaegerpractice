@@ -59,13 +59,27 @@
     .musing-hero-grid {
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(300px, 430px);
-      gap: 72px;
-      align-items: center;
+      column-gap: 72px;
+      row-gap: 28px;
+      align-items: start;
+    }
+    .musing-title-copy {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: end;
+    }
+    .musing-title-copy h1 {
+      margin-bottom: 0;
     }
     .musing-hero .hero-copy {
+      grid-column: 1;
+      grid-row: 2;
       max-width: 760px;
     }
     .musing-logo {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      align-self: center;
       margin: 0;
       width: 100%;
       max-width: 430px;
@@ -267,16 +281,25 @@
     }
     @media (max-width: 820px) {
       .musing-hero-grid {
-        grid-template-columns: 1fr;
-        gap: 44px;
+        grid-template-columns: minmax(0, 1fr) minmax(160px, 220px);
+        column-gap: 36px;
+        row-gap: 28px;
+      }
+      .musing-title-copy {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
       }
       .musing-hero .hero-copy {
+        grid-column: 1 / -1;
         grid-row: 2;
       }
       .musing-logo {
+        grid-column: 2;
         grid-row: 1;
-        justify-self: start;
-        max-width: 320px;
+        align-self: center;
+        justify-self: end;
+        max-width: 220px;
       }
       .musing-intro-grid {
         grid-template-columns: 1fr;
@@ -295,10 +318,15 @@
         padding-bottom: 64px;
       }
       .musing-hero-grid {
-        gap: 32px;
+        grid-template-columns: minmax(0, 1fr) 112px;
+        column-gap: 16px;
+        row-gap: 32px;
       }
       .musing-logo {
-        max-width: 220px;
+        max-width: 112px;
+      }
+      .musing-title-copy h1 {
+        font-size: clamp(2.35rem, 11vw, 2.8rem);
       }
       .musing-intro,
       .latest {
@@ -385,9 +413,11 @@
   <main id="main">
     <section class="hero musing-hero" aria-labelledby="musing-heading">
       <div class="container musing-hero-grid">
-        <div class="hero-copy">
+        <div class="musing-title-copy">
           <span class="eyebrow">Musing</span>
           <h1 id="musing-heading">Musings for the Mental</h1>
+        </div>
+        <div class="hero-copy">
           <p class="musing-kicker">Reflections on contemporary mental health issues from a licensed mental health counselor who has definitely seen a few things.</p>
           <p class="hero-lede">
             A more colloquial counterpart to the practice: field observations, clinical perspective, and useful provocations for adult life.
