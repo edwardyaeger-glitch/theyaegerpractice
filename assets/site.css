@@ -147,6 +147,12 @@
       .nav-links a { font-size: 0.78rem; }
     }
 
+    /* Mobile: keep primary nav on one line */
+    @media (max-width: 480px) {
+      .nav-links { flex-wrap: nowrap; justify-content: space-between; gap: 6px; }
+      .nav-links a { font-size: clamp(0.68rem, 3.2vw, 0.78rem); }
+    }
+
     /* ===== Buttons ===== */
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
@@ -505,6 +511,12 @@
     footer.foot-min .foot-line a:hover { color: #fff; }
     footer.foot-min .foot-fine a { color: #6e685f; }
     footer.foot-min .foot-line span[aria-hidden="true"] { color: #4a443d; }
+
+    /* Mobile: drop footer separators so none dangle at line ends */
+    @media (max-width: 640px) {
+      footer.foot-min .foot-line { gap: 2px 16px; }
+      footer.foot-min .foot-line > span[aria-hidden="true"] { display: none; }
+    }
 
     /* ===== AREAS GRID (home page) ===== */
     .areas-intro {

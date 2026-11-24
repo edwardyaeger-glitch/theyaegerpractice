@@ -59,6 +59,12 @@ footer.foot-min .foot-line {
   font-size: 0.88rem; color: #8a857c; max-width: none;
   display: flex; flex-wrap: wrap; align-items: center; gap: 0 10px;
 }
+
+/* Mobile: drop footer separators so none dangle at line ends */
+@media (max-width: 640px) {
+  footer.foot-min .foot-line { gap: 2px 16px; }
+  footer.foot-min .foot-line > span[aria-hidden="true"] { display: none; }
+}
 footer.foot-min .foot-line + .foot-line { margin-top: 6px; }
 footer.foot-min .foot-fine { font-size: 0.8rem; color: #6e685f; margin-top: 14px; }
 footer.foot-min .foot-line a { color: #c7c2b8; text-decoration: none; }
